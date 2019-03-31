@@ -21,7 +21,7 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #FEC917;
+  color: #ffffff;
 }
 
 h1, h2, h3, h4 {
@@ -32,27 +32,85 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 2.25em;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
 }
 
 h4 {
   font-size: 1.35em;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
 }
 
 img {
   width: 100%;
 }
+
+header svg {
+  max-width: 100px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:hover,
+a:focus {
+  color: #fec917;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #fec917 !important;
+  text-transform: uppercase;
+  border: 2px solid #fec917;
+}
+
+.button.contact:hover {
+  background-color: #fec917;
+  color: #ffffff !important;
+}
+
+.button.contact:active {
+  background-color: #fec917;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: #fec917;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #fec917;
+  color: #1a3459 !important;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #ffffff;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
