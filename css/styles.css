@@ -12,6 +12,25 @@ Fonts used:
 font-family: 'Montserrat', sans-serif;
 font-family: 'Quicksand', sans-serif;
 */
+/*
+header {
+  background-color: #3055a3;
+  padding: 10px;
+  margin: 10px; /*Could have also used (margin: 0.625em)
+  border-bottom: 10px solid #fec917;
+}
+*/
+
+/* Layout styling*/
+
+.container{
+  padding: 0 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #1A3459;
   font-family: 'Quicksand', sans-serif;
@@ -63,6 +82,10 @@ a {
   color: #ffffff;
   text-decoration: none;
   /* No underlining */
+}
+
+a:visited {
+  color: #ffffff
 }
 
 a:hover,
