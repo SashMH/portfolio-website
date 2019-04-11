@@ -20,17 +20,115 @@ header {
   border-bottom: 10px solid #fec917;
 }
 */
-
 /* Layout styling*/
-
-.container{
-  padding: 0 15px;
-}
-
 * {
   box-sizing: border-box;
 }
 
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /*25px top and bottom, 0 left and right*/
+}
+
+.row-large {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ffffff;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+#about h1 {
+  text-align: center;
+}
+
+#about .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ffffff;
+}
+
+#vela h1 {
+  text-align: center;
+}
+
+#vela .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ffffff;
+}
+
+#vela .row-large {
+  padding-bottom: 25px;
+  border-bottom: 5px solid #ffffff;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+header {
+  background-color: #3055a3;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.62);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.62);
+  box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.62);
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+nav>ul>li>a:visited {
+  color: #ffffff;
+}
+
+nav>ul>li>a:hover, a:focus {
+  color: #fec917;
+}
+
+nav>ul>li>a:active {
+  color: #fec917;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+#hero {
+  background-color: #3055a3;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/*
+main{
+  padding-top: 181px;
+}
+*/
 body {
   background-color: #1A3459;
   font-family: 'Quicksand', sans-serif;
@@ -74,10 +172,11 @@ img {
   width: 100%;
 }
 
+/*
 header svg {
   max-width: 100px;
 }
-
+*/
 a {
   color: #ffffff;
   text-decoration: none;
