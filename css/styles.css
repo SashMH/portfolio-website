@@ -25,6 +25,128 @@ header {
   box-sizing: border-box;
 }
 
+/*
+main{
+  padding-top: 181px;
+}
+*/
+body {
+  background-color: #1A3459;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.50em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+#work svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+header svg {
+  max-width: 100px;
+}
+*/
+a {
+  color: #ffffff;
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:visited {
+  color: #ffffff
+}
+
+a:hover,
+a:focus {
+  color: #fec917;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #fec917;
+  color: #1a3459 !important;
+  /* needed to override the default link color */
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  border-bottom: 2px solid #ffffff;
+  /* width of the border, type, color */
+  transition: 0.2s;
+  transition-property: opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: #fec917;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #fec917 !important;
+  text-transform: uppercase;
+  border: 2px solid #fec917;
+}
+
+.button.contact:hover {
+  background-color: #fec917;
+  color: #ffffff !important;
+}
+
+.button.contact:active {
+  background-color: #fec917;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 .container {
   padding: 0 15px;
 }
@@ -32,6 +154,10 @@ header {
 .row {
   margin: 25px 0;
   /*25px top and bottom, 0 left and right*/
+}
+
+.row-large {
+  margin: 25px 0;
 }
 
 .row-large {
@@ -60,6 +186,10 @@ header {
   text-align: center;
 }
 
+#vela h2 {
+  text-align: center;
+}
+
 #vela .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #ffffff;
@@ -71,7 +201,12 @@ header {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 50px;
+}
+
+.external-logo {
+  margin: 25px 0;
+  size: 100px;
 }
 
 header {
@@ -124,116 +259,186 @@ nav {
   width: 100%;
 }
 
-/*
-main{
-  padding-top: 181px;
-}
-*/
-body {
-  background-color: #1A3459;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
-  /* Sets the font size to 16px */
-  font-weight: 300;
-  /* Sets the font weight to 300 */
-  line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
-  color: #ffffff;
+#hero p {
+  text-align: center;
 }
 
-h1, h2, h3, h4 {
-  line-height: 1.4;
-  font-family: 'Montserrat', sans-serif;
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 18;
+  }
+
+  header {
+    text-align: unset;
+    padding: 20px 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row-large::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #work h3 {
+    margin-top: 0;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+
+  #vela h4 {
+    margin-top: 0;
+  }
 }
 
-h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-  text-transform: uppercase;
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 20;
+  }
+
+  header {
+    text-align: unset;
+    padding: 20px 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row-large::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #work h3 {
+    margin-top: 0;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+
+  #vela h4 {
+    margin-top: 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-  text-transform: uppercase;
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-size: 3.25em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 2.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 2.25em;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 1.85em;
+    font-weight: 400;
+  }
 }
 
-h3 {
-  font-size: 1.75em;
-  font-weight: 400;
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
-h4 {
-  font-size: 1.35em;
-  font-weight: 400;
+.sun {
+  animation: 4s color-change infinite alternate linear
 }
 
-img {
-  width: 100%;
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
-/*
-header svg {
-  max-width: 100px;
-}
-*/
-a {
-  color: #ffffff;
-  text-decoration: none;
-  /* No underlining */
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
 }
 
-a:visited {
-  color: #ffffff
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
-a:hover,
-a:focus {
-  color: #fec917;
-  text-decoration: underline;
-  /* Underlining when hovering over a link */
-}
-
-.button {
-  display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #fec917;
-  color: #1a3459 !important;
-  /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #ffffff;
-  /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
-
-.button:hover {
-  opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
-
-.button:active {
-  background-color: #fec917;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.button.contact {
-  background-color: transparent;
-  color: #fec917 !important;
-  text-transform: uppercase;
-  border: 2px solid #fec917;
-}
-
-.button.contact:hover {
-  background-color: #fec917;
-  color: #ffffff !important;
-}
-
-.button.contact:active {
-  background-color: #fec917;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear
 }
