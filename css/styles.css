@@ -166,7 +166,7 @@ a:focus {
   border-bottom: 1px solid #ffffff;
 }
 
-#hero h1, #about h1, #vela h1 h2 {
+#hero h1, #about h1, #vela h1, #vela h2 {
   text-align: center;
 }
 
@@ -175,11 +175,12 @@ a:focus {
   border-bottom: 5px solid #ffffff;
 }
 
+/*
 #vela .row-large:last-child {
   margin-bottom: 0;
   border-bottom: 0;
 }
-
+*/
 #work .row:last-child {
   margin-bottom: 0;
   border-bottom: 0;
@@ -308,11 +309,7 @@ footer .fab {
     display: table;
   }
 
-  #work h3, #about h3 {
-    margin-top: 0;
-  }
-
-  #vela h4 {
+  #work h3, #about h3, #vela h4 {
     margin-top: 0;
   }
 }
@@ -397,7 +394,7 @@ footer .fab {
 }
 
 .sun {
-  animation: 4s color-change infinite alternate linear
+  animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
@@ -425,5 +422,5 @@ footer .fab {
 }
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
