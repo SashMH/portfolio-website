@@ -175,12 +175,11 @@ a:focus {
   border-bottom: 5px solid #ffffff;
 }
 
-/*
-#vela .row-large:last-child {
+.no-border {
   margin-bottom: 0;
-  border-bottom: 0;
+  border-bottom: 0 !important;
 }
-*/
+
 #work .row:last-child {
   margin-bottom: 0;
   border-bottom: 0;
