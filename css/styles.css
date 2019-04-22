@@ -21,7 +21,7 @@ header {
 }
 */
 /* Layout styling*/
-* {
+/* {
   box-sizing: border-box;
 }
 
@@ -42,6 +42,11 @@ body {
   color: #ffffff;
 }
 
+/*
+main {
+  padding-top: 56px;
+}
+*/
 h1, h2, h3, h4 {
   line-height: 1.4;
   font-family: 'Montserrat', sans-serif;
@@ -201,8 +206,7 @@ a:focus {
 
 header {
   background-color: #3055a3;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: relative;
   width: 100%;
   -webkit-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.62);
@@ -213,10 +217,7 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -237,9 +238,40 @@ nav>ul>li>a:active {
   color: #fec917;
 }
 
+/*
 nav {
   display: inline-block;
   width: 100%;
+}
+*/
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 30px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 #hero {
@@ -285,6 +317,22 @@ footer .fab {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .logo {
+    min-width: 80px;
   }
 
   .col-md-6 {
