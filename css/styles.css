@@ -21,7 +21,7 @@ header {
 }
 */
 /* Layout styling*/
- * {
+* {
   box-sizing: border-box;
 }
 
@@ -186,8 +186,8 @@ a:focus {
 }
 
 #work .row:last-child {
-  margin-bottom: 0;x
-  border-bottom: 0;
+  margin-bottom: 0;
+  x border-bottom: 0;
 }
 
 #about .row:last-child {
@@ -334,6 +334,7 @@ footer .fab {
   .navtoggle li:last-child {
     display: none;
   }
+
   .logo {
     min-width: 80px;
   }
