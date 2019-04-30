@@ -102,7 +102,7 @@ a:visited {
 a:hover,
 a:focus {
   color: #fec917;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   /* Underlining when hovering over a link */
 }
 
