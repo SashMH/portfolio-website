@@ -195,6 +195,11 @@ a:focus {
   border-bottom: 0;
 }
 
+#work .row:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
 .logo {
   max-width: 50px;
 }
