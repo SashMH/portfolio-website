@@ -108,16 +108,17 @@ a:focus {
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  /* since the <a> tag is inline by default, we need to change this to inline-block */
   background-color: #fec917;
   color: #1a3459 !important;
-  /* needed to override the default link color */
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 10px;
-  border-bottom: 2px solid #ffffff;
-  /* width of the border, type, color */
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border: 2px solid #fec917;
+  padding: 10px 30px;
+  border-radius: 50px;
+  /*border-bottom: 4px solid #ffffff;*/
   transition: 0.2s;
   transition-property: opacity;
 }
@@ -151,6 +152,16 @@ a:focus {
   background-color: #fec917;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+#prototype .button.contact {
+  text-align: center;
+}
+
+.portfolio-button {
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .container {
