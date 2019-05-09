@@ -198,7 +198,7 @@ a:focus {
 
 #work .row:last-child {
   margin-bottom: 0;
-  x border-bottom: 0;
+  border-bottom: 0;
 }
 
 #about .row:last-child {
@@ -217,7 +217,6 @@ a:focus {
 
 .external-logo {
   padding: 25px 0;
-  size: 100px;
 }
 
 header {
