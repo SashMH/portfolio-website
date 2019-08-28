@@ -31,7 +31,7 @@ main{
 }
 */
 body {
-  background-color: #1A3459;
+  background-color: #000000;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -39,7 +39,7 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #ffffff;
+  color: #18cae6;
 }
 
 /*
@@ -50,6 +50,7 @@ main {
 h1, h2, h3, h4 {
   line-height: 1.4;
   font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
 }
 
 h1 {
@@ -182,6 +183,10 @@ a:focus {
   border-bottom: 1px solid #ffffff;
 }
 
+#hero {
+  color: #000000;
+}
+
 #hero h1, #about h1, #vela h1, #vela h2 {
   text-align: center;
 }
@@ -220,13 +225,15 @@ a:focus {
 }
 
 header {
-  background-color: #3055a3;
+  background-color: #000000;
   padding: 10px 0 4px;
   position: relative;
   width: 100%;
+  /*
   -webkit-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.62);
   -moz-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.62);
   box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.62);
+  */
 }
 
 nav>ul {
@@ -290,7 +297,7 @@ nav {
 }
 
 #hero {
-  background-color: #3055a3;
+  background-color: #18cae6;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
