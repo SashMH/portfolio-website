@@ -185,13 +185,14 @@ a:focus {
 
 #hero {
   color: #000000;
+  font-weight: 400;
 }
 
 #hero h1, #about h1, #vela h1, #vela h2 {
   text-align: center;
 }
 
-#vela .row-large {
+#vela .row-large, #work .row-large, #about .row-large {
   padding-bottom: 25px;
   border-bottom: 5px solid #ffffff;
 }
@@ -211,10 +212,6 @@ a:focus {
   border-bottom: 0;
 }
 
-#work .row:last-child {
-  margin-bottom: 0;
-  border-bottom: 0;
-}
 
 .logo {
   max-width: 50px;
@@ -229,6 +226,9 @@ header {
   padding: 10px 0 4px;
   position: relative;
   width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+
   /*
   -webkit-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.62);
   -moz-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.62);
